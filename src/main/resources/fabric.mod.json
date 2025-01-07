@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "modcredits",
+  "name": "Mod Credits",
+  "version": "${version}",
+  "environment": "client",
+  "license": "LGPL-3.0-or-later",
+  "icon": "assets/modcredits/icon.png",
+  "entrypoints": {
+    "client": [
+      "com.mclegoman.modcredits.ModCredits"
+    ]
+  },
+  "contact": {
+    "sources": "https://github.com/mclegoman/modcredits",
+    "issues": "https://github.com/mclegoman/modcredits/issues"
+  },
+  "depends": {
+    "minecraft": "0.31",
+    "fabricloader": "*"
+  },
+  "authors": [
+    "dannytaylor"
+  ],
+  "description": "Adds a credits screen to list the mods you currently have installed.",
+  "mixins": [
+    "modcredits.mixins.json"
+  ]
+}
