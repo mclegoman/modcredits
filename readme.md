@@ -1,5 +1,5 @@
 # Mod Credits
-Save allows the player to save, load, and convert worlds in older versions that didn't have saving.  
+Adds a credits screen to list the mods you currently have installed.  
 
 ## Dependencies  
 - [Fabric Loader](https://quiltmc.org/).  
