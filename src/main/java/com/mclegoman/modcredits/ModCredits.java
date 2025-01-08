@@ -14,7 +14,7 @@ public class ModCredits implements ClientModInitializer {
 	public void onInitializeClient() {
 		// Add all mod ID's and corresponding container to an unsorted map.
 		Map<String, ModContainer> unprocessedMods = new HashMap<>();
-		for (ModContainer modContainer : FabricLoader.getInstance().getAllMods()) unprocessedMods.put(modContainer.getMetadata().getName(), modContainer);
+		for (ModContainer modContainer : FabricLoader.getInstance().getAllMods()) unprocessedMods.put(modContainer.getMetadata().getName().toLowerCase(), modContainer);
 		// Sort mod ID's alphabetically and add the corresponding ModContainer to the 'mods' list.
 		SortedSet<String> keys = new TreeSet<>(unprocessedMods.keySet());
 		for (String key : keys) mods.add(unprocessedMods.get(key));
